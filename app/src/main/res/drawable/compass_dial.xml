@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+  <circle cx="50" cy="50" r="48" strokeColor="#ffffff" strokeWidth="2" fillColor="#1A1A2E"/>
+  <path android:pathData="M50,2 L50,10" strokeColor="#E94560" strokeWidth="4"/>
+  <path android:pathData="M50,90 L50,98" strokeColor="#ffffff" strokeWidth="2"/>
+  <path android:pathData="M98,50 L90,50" strokeColor="#ffffff" strokeWidth="2"/>
+  <path android:pathData="M2,50 L10,50" strokeColor="#ffffff" strokeWidth="2"/>
+  <!-- N, S, E, W Text would be hard in vector, using lines for now -->
+</vector>
