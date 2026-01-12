@@ -3,16 +3,16 @@ plugins {
 }
 
 android {
-    namespace = "com.noor.prayer"
+    namespace = "com.noor.salat"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.noor.prayer"
+        applicationId = "com.noor.salat"
         minSdk = 24
         targetSdk = 36
-        versionCode = 2
+        versionCode = 1
         versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -20,10 +20,10 @@ android {
 
     signingConfigs {
         create("release") {
-            storeFile = file("release-key.jks")
-            storePassword = "password123"
-            keyAlias = "my-key-alias"
-            keyPassword = "password123"
+            storeFile = rootProject.file("key/key.jks")
+            storePassword = "123456"
+            keyAlias = "key0"
+            keyPassword = "123456"
         }
     }
 
