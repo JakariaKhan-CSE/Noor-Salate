@@ -47,8 +47,8 @@ public class SettingsFragment extends Fragment {
 
     private void setupSpinners() {
         // Calculation Method
-        ArrayAdapter<String> methodAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, methodNames);
-        methodAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> methodAdapter = new ArrayAdapter<>(requireContext(), R.layout.spinner_item, methodNames);
+        methodAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         calcMethodSpinner.setAdapter(methodAdapter);
         
         int savedMethod = prefs.getInt("calc_method", 2); // Default ISNA
@@ -65,8 +65,8 @@ public class SettingsFragment extends Fragment {
         });
 
         // Madhab
-        ArrayAdapter<String> madhabAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_spinner_item, madhabNames);
-        madhabAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> madhabAdapter = new ArrayAdapter<>(requireContext(), R.layout.spinner_item, madhabNames);
+        madhabAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         madhabSpinner.setAdapter(madhabAdapter);
 
         int savedMadhab = prefs.getInt("madhab", 0);
